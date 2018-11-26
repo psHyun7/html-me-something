@@ -1,0 +1,72 @@
+body {
+    width: 100%;
+    max-width: 1024px;
+    background-color:white;
+    font-size: 100%;
+    margin: 0 auto;
+}
+
+header,
+main,
+footer {
+    background-color: lightgrey
+}
+
+header {
+    padding: 24pt;
+}
+
+footer {
+    text-align: center;
+    font-style: italic;
+    padding: 36pt;
+}
+
+header h1 {
+    text-align: center;
+}
+
+h1 {
+    font-size: 32pt;
+}
+
+section {
+    margin: 24pt;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    top: 0;
+    text-align: center;
+    background-color: #333;
+}
+
+ul li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #111;
+}
+
+/* Tried to make a sticky menu. did not work. do not know why */
+nav {  
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
+}
+
+figcaption {
+    font-style: italic;
+}
