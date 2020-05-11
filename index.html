@@ -12,16 +12,17 @@
     <body>
         <header>
             <h1>Main Menu</h1>
-            <nav>
-                <ul>
-                    <li><a href="#Water">Water</a></li>
-                    <li><a href="#Fire">Fire</a></li>
-                    <li><a href="#Wind">Wind</a></li>
-                    <li><a href="#Light">Light</a></li>
-                    <li><a href="#Dark">Dark</a></li>
-                </ul>
-            </nav>
-        </header>
+        </header> 
+
+        <div id = "navbar">
+            <ul>
+                <li><a href="#Water">Water</a></li>
+                <li><a href="#Fire">Fire</a></li>
+                <li><a href="#Wind">Wind</a></li>
+                <li><a href="#Light">Light</a></li>
+                <li><a href="#Dark">Dark</a></li>
+            </ul>
+        </div>
         
         <main>
             <article>
@@ -390,7 +391,25 @@
         </main>
 
         <footer>
-            <p>&copy; 2018 SungHyun Park</p>
+            <p>&copy; 2020 SungHyun Park</p>
         </footer>
+
+        <script>
+            // Execute giveSticky upon user scrolling page
+            window.onscroll = function() {giveSticky()};
+            // Get navbar
+            let navbar = document.getElementById("navbar");
+            let sticky = navbar.offsetTop;
+
+            // Add sticky glass to navbar when it reaches scroll position.
+            function giveSticky() {
+                if (window.pageYOffset >= sticky) {
+                    navbar.classList.add("sticky");
+                } else {
+                    navbar.classList.remove("sticky");
+                }
+            }
+        </script>
+    
     </body>
 </html>

@@ -46,6 +46,7 @@ ul {
 
 ul li {
     float: left;
+    text-align: center;
 }
 
 li a {
@@ -60,11 +61,14 @@ li a:hover {
     background-color: #111;
 }
 
-/* Tried to make a sticky menu. did not work. do not know why */
-nav {  
-    position: -webkit-sticky; /* Safari */
-    position: sticky;
+.sticky {
+    position: fixed;
     top: 0;
+    width: 100%;
+}
+
+.sticky + .content {
+    padding-top: 30px;
 }
 
 figcaption {
