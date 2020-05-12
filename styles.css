@@ -61,6 +61,21 @@ li a:hover {
     background-color: #111;
 }
 
+img {
+    border-radius: 7px;
+    border: 1px solid whitesmoke;
+    max-width: 75%;
+    height: auto;
+    width: auto;
+    
+}
+
+#skill-icon {
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+}
+
 .sticky {
     position: fixed;
     top: 0;
